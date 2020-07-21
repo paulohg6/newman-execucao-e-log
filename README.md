@@ -1,4 +1,6 @@
-# Newman Instalaçãoo e Execução da automação.
+# Newman (instalação execução)
+
+Abaixo segue um resumo da documentação detalhada do [Newman](https://github.com/postmanlabs/newman)
 
 ## Pre-requisitos
    1. Ter instalado o nodeJS: https://nodejs.org/en/
@@ -12,15 +14,15 @@ npm install -g newman
 
 ## Executando os testes
 
-1. Exportar a Collection: Para utilizar o Newman é necessário ter a collections da suite criada no Postman, ou seja, a estrutura com as requisições para testes. Ao exportar será gerado o arquivo em formato JSON (*.json):
+1. Exportar a _collection_ criada no Postman. Ao exportar será gerado o arquivo em formato JSON (*.json):
 ![](/img-gif/export.png)
 
-2. Executando o Newman: Abrir a pasta onde foi salva a collection em formato JSON via terminal.
+1. Executar a _collection_ pelo Newman
+```shell
+newman run "<nome_da_collection>.json -r htmlextra".
+```
 
-3. Linha de comando: Na tela do 'cmd' informar o comando newman run "<nome_da_collection>.json -r htmlextra".
 ![](/img-gif/Exemplo-linha-de-comando.png)
 
-Isso iniciará execução dos testes e poderá ser visualizado em run time:
-
-Dentro da Pasta onde foi executado a linha de comando, será criado a seguinte página html:
+1. Visualizar o resultado da execução, depositado em arquivo HTML pelo comando executado no passo anterior. O resultado será similar à ilustração abaixo:
 ![](/img-gif/dashboad-html.png)
