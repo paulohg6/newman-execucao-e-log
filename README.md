@@ -10,6 +10,7 @@ Após instalar o nodeJS, executar o seguinte comando para a instalação do Newm
 
 ```JavaScript
 npm install -g newman
+npm install -g newman-reporter-htmlextra
 ```
 
 ## Executando os testes
