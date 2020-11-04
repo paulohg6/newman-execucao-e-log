@@ -20,7 +20,7 @@ npm install -g newman-reporter-htmlextra
 
 1. Executar a _collection_ pelo Newman
 ```shell
-newman run "<nome_da_collection>.json -r htmlextra".
+newman run <nome_da_collection>.json  --globals <nome_do_VariaveisGlobais>.json -r htmlextra
 ```
 
 ![](/img-gif/Exemplo-linha-de-comando.png)
